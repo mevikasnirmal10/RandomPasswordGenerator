@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Passowrd</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="newPass">
+            <h1 id="newPass"></h1>
+        </div>
+
+        <div class="range">
+            <input type="range" min="10" max="20" value="12" id="range">
+        </div>
+        <div class="rangeVal">
+            <p id="rangeVal">8</p>
+        </div>
+        <div class="checkbox">
+            <div class="checkbox1">
+                <input type="checkbox" name="UpperCase" id="capLet">
+                <label for="capLet" class="number">UpperCase</label>
+            </div>
+
+            <div class="checkbox2">
+                <input type="checkbox" name="LowerCase" id="samLet">
+                <label for="samLet" class="number">LowerCase</label>
+            </div>
+
+            <div class="checkbox3">
+                <input type="checkbox" name="number" id="number">
+                <label for="number" class="number">Number</label>
+            </div>
+            <div class="checkbox4">
+                <input type="checkbox" name="symbol" id="symbol">
+                <label for="symbol" class="symbol">symbol</label>
+            </div>
+            <div class="button">
+                <button id="genPass">Generate Password</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,117 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Added padding to prevent overflow */
+}
+
+/* Container styles */
+.container {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 600px; /* Added max-width for larger screens */
+    height: auto; /* Adjust height to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 20px; /* Added padding inside the container */
+}
+
+/* Checkbox styles */
+.checkbox {
+    font-size: 18px; /* Adjusted font size for better readability */
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure full width */
+}
+
+/* New password input styles */
+.newPass {
+    border-radius: 10px;
+    width: 100%; /* Adjusted width for responsiveness */
+    max-width: 400px; /* Added max-width for larger screens */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(63, 94, 251);
+    font-size: 15px;
+    color: white;
+    border: none; /* Remove border for a cleaner look */
+}
+
+/* Range styles */
+.range {
+    margin-top: 30px; /* Adjusted margin for better spacing */
+}
+
+/* Checkbox items styling */
+.checkbox1,
+.checkbox2,
+.checkbox3,
+.checkbox4 {
+    margin-top: 15px; /* Adjusted margin for consistency */
+}
+
+/* Button styles */
+.button > button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px; /* Adjusted font size for better readability */
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: rgb(63, 94, 251);
+    color: white;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .newPass {
+        font-size: 14px; /* Adjust font size for better readability */
+        height: 40px; /* Adjust height for smaller screens */
+    }
+
+    .button > button {
+        font-size: 16px; /* Adjust font size for better readability */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Full width on extra-small screens */
+        padding: 10px; /* Adjust padding for extra-small screens */
+        margin: 50px;
+    }
+
+    .newPass {
+        font-size: 13px; /* Adjust font size for extra-small screens */
+        height: 35px; /* Adjust height for extra-small screens */
+    }
+
+    .button > button {
+        font-size: 14px; /* Adjust font size for extra-small screens */
+        padding: 6px; /* Adjust padding for extra-small screens */
+    }
+}
